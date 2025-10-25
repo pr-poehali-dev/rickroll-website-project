@@ -2,11 +2,18 @@
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4 color-black text-black">Добро пожаловать!</h1>
-        <p className="text-xl text-gray-600">тут будет отображаться ваш проект</p>
-      </div>
+    <div className="fixed inset-0 w-full h-full overflow-hidden bg-black">
+      <iframe
+        className="absolute top-0 left-0 w-full h-full"
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&controls=0&showinfo=0&rel=0&loop=1&playlist=dQw4w9WgXcQ&modestbranding=1"
+        title="Rick Astley - Never Gonna Give You Up"
+        allow="autoplay; encrypted-media"
+        allowFullScreen
+        style={{
+          border: 'none',
+          pointerEvents: 'auto'
+        }}
+      />
     </div>
   );
 };
